@@ -26,8 +26,10 @@ router.get("/", async function (req, res) {
     );
     const json = await response.json();
     const { results, filters } = json;
+    const author = res.locals.author;
 
     const body = {
+      author: author,
       items: results?.map((item) => {
         const {
           id,
@@ -76,6 +78,7 @@ router.get("/:id", async function (req, res) {
       ),
     ]);
 
+    const author = res.locals.author;
     const {
       id,
       title,
@@ -90,6 +93,7 @@ router.get("/:id", async function (req, res) {
     const { plain_text } = description;
 
     const body = {
+      author: author,
       item: {
         id: id,
         title: title,

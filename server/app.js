@@ -11,6 +11,18 @@ var app = express();
 
 app.use(cors());
 
+const addAuthorToResponse = (req, res, next) => {
+  const author = {
+    name: 'Diego',
+    lastname: 'Maidana'
+  };
+
+  res.locals.author = author;
+  next();
+};
+
+app.use(addAuthorToResponse);
+
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
