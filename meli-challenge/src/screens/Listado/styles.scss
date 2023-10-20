@@ -1,0 +1,49 @@
+@import "../../sassStyles/colors";
+@import "../../sassStyles/sizes";
+
+section.listado-container {
+  background-color: $white;
+  color: $text-primary;
+  margin-bottom: 80px;
+  img.thumbnail {
+    border-radius: 4px;
+    height: 180px;
+    margin: $dimensions-small;
+    width: 180px;
+  }
+
+  .item-link {
+    text-decoration: none;
+    color: $text-primary;
+
+    .item-price {
+      display: inline-block;
+      font-size: $font-xl;
+      font-weight: 300;
+      padding-top: $dimensions-small;
+      width: 100%;
+
+      span {
+        font-size: $font-small;
+      }
+
+      img {
+        margin: 0px 10px 0px 10px;
+      }
+      :last-child {
+        display: inline-block;
+        text-align: right;
+        width: 65%;
+      }
+    }
+
+    .item-title {
+      font-size: $font-large;
+      max-width: 50%;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+  }
+}

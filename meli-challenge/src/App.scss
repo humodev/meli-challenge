@@ -1,0 +1,37 @@
+@import "./sassStyles/colors";
+@import "./sassStyles/sizes";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+
+html,
+body {
+  background: $utility-grey-1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: Roboto;
+  font-weight: 300;
+  display: flex;
+  font-size: $font-large;
+
+  .breadcrumbs {
+    color: $utility-grey-3;
+    font-size: $font-regular;
+    margin: $dimensions-small 0px $dimensions-small 0px;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 80px;
+    height: auto;
+    width: 100%;
+    position: absolute;
+  }
+
+  .divider {
+    background-color: $utility-grey-1;
+    display: block;
+    height: 2px;
+    margin: 0px 20px 0px 20px;
+  }
+}

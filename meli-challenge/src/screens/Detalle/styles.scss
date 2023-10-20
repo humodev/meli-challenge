@@ -1,0 +1,60 @@
+@import "../../sassStyles/colors";
+@import "../../sassStyles/sizes";
+
+section.detalle-container {
+  background-color: $white;
+  color: $text-primary;
+  margin-bottom: 80px;
+  img.detalle-imagen {
+    border-radius: 4px;
+    margin: $dimensions-small;
+    width: 680px;
+  }
+
+  .item-container {
+    margin-top: $dimensions-big;
+
+    button {
+      background-color: $utility-blue;
+      border: 0;
+      border-radius: 4px;
+      color: $white;
+      display: block;
+      font-size: $font-medium;
+      margin: $dimensions-big $dimensions-big 0 0;
+      padding: 12px 0px 12px 0px;
+      width: 100%;
+    }
+    
+    .item-price {
+      font-size: $font-xxxl;
+      font-weight: 300;
+      margin-top: $dimensions-small;
+    }
+
+    .item-title {
+      font-size: $font-xl;
+      font-weight: 400;
+      margin-top: $dimensions-small;
+    }
+
+    .item-above-title {
+      font-size: $font-regular;
+    }
+  }
+
+  .descripcion {
+    padding: $dimensions-big;
+
+    h2 {
+      font-size: $font-xxl;
+      font-weight: 300;
+      margin: 0px;
+    }
+    p {
+      color: $utility-grey-2;
+      font-size: $font-medium;
+      margin-top: $dimensions-big;
+    }
+  }
+}
